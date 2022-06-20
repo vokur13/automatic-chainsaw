@@ -42,8 +42,7 @@ img {
   border: 0;
   padding: 0;
   white-space: nowrap;
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -62,32 +61,24 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .nav__link {
   position: relative;
   display: inline-block;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 20px;
   background-color: grey;
   color: #fff;
   border-radius: 4px;
-  -webkit-transition: background-color 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear;
-  transition: background-color 250ms linear, color 250ms linear, -webkit-box-shadow 250ms linear;
   transition: background-color 250ms linear, color 250ms linear, box-shadow 250ms linear;
-  transition: background-color 250ms linear, color 250ms linear, box-shadow 250ms linear, -webkit-box-shadow 250ms linear;
 }
-
 .nav__link:hover, .nav__link:focus {
   background-color: aquamarine;
   color: black;
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .nav__link--active::after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   bottom: 0;
@@ -110,7 +101,6 @@ img {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 20;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
@@ -126,18 +116,15 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 30;
   /* Должен быть выше чем у подложки*/
   /*  Побочные стили   */
-  -webkit-box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 3px 10px -0.5px rgba(0, 0, 0, 0.2);
   text-align: center;
   padding: 30px;
   border-radius: 3px;
   background-color: #fff;
-  -webkit-transition: 0.3s all;
   transition: 0.3s all;
 }
 
@@ -168,5 +155,4 @@ a {
   margin: 10px;
   color: #fff;
   border-radius: 3px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
